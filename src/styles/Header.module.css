@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  width: 1612px;
+  height: 40px;
+  padding: 12px 32px;
+  border-bottom: 1px solid #d9d9d9;
+  background: #fff;
+  align-items: center;
+  gap: 16px;
+}
+
+.leftTextBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.title {
+  color: #1a181e;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.infoText {
+  color: #4d4d4d;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.searchBarBox {
+  display: flex;
+  width: 400px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  background: #f2f2f2;
+  align-items: center;
+  gap: var(--Spacing-spacing-04, 8px);
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.searchBarIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.searchBarText {
+  color: #808080;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: var(--Spacing-spacing-04, 8px);
+  flex: 1 0 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
