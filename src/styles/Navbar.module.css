@@ -1,0 +1,170 @@
+.navbar {
+  height: 965px;
+  width: 224px;
+  background-color: #1e2640;
+  color: #ffffff;
+  padding: 16px 10px 0px;
+}
+
+.navBox {
+  /* height: 1482px; */
+  width: 224px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+  height: 100%;
+}
+.companyBox {
+  width: 192px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.companyImg {
+  border-radius: 4px;
+  background: lightgray 50% / contain no-repeat;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+}
+.companyTitle {
+  width: 108px;
+  align-self: stretch;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.companyData {
+  margin-top: 3px;
+  opacity: 0.8;
+  align-self: stretch;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration-line: underline;
+}
+
+.down {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+  
+}
+.navButton {
+  display: flex;
+  width: 176px;
+  height: 20px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 12px;
+}
+.navButton:hover {
+  display: flex;
+  width: 176px;
+  height: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.navButtonPayments {
+  display: flex;
+  width: 176px;
+  height: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.navIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.navName {
+  color: var(--Black-100, #fff);
+  opacity: 0.8;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.navWallet {
+  height: 54px;
+  display: flex;
+  width: 168px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #353c53;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.navWalletIconContainer {
+  display: flex;
+  padding: 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: flex-start;
+  gap: 10px;
+}
+.navWalletIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.navWalletBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.navWalletTitle {
+  opacity: 0.8;
+  color: var(--Black-100, #fff);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 0px;
+}
+
+.navWalletMoney {
+  margin-top: 0px;
+  color: var(--Black-100, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
