@@ -72,7 +72,7 @@ export default function MainBox() {
                     </div>
                 </div>
                 <div className={styles.bottomBox}>
-                    <div className={styles.bottomBoxTitle}>Transactions | This Month</div>
+                    <div className={styles.bottomBoxTitle}>Transactions | {selectedMonth}</div>
                     <div className={styles.tableBox}>
                         <div className={styles.tableHeader}>
                             <div className={styles.searchBar}>

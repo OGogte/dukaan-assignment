@@ -54,12 +54,13 @@
   line-height: 1.25vw;
 }
 .monthDropdown {
-  width: 6.406vw;
+  width: 6.606vw;
   height: 3.67vh;
   border-radius: 0.208vw;
   border: 1px solid #d9d9d9;
   background: #fff;
   padding-left: 0.73vw;
+  padding-right: 0.53vw;
   font-size: 0.833vw;
 }
 
@@ -67,6 +68,7 @@
   width: 0.833vw;
   height: 0.833vw;
   flex-shrink: 0;
+  
 }
 
 .details {
@@ -218,12 +220,12 @@
   border: none;
   outline: none;
   background: #fff;
-  font-size: 0.73vw;
+  font-size: 0.83vw;
 }
 
 .searchIcon {
-  width: 0.729vw;
-  height: 0.729vw;
+  width: 0.829vw;
+  height: 0.829vw;
 }
 
 .searchText {
