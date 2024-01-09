@@ -41,8 +41,10 @@ export default function MainBox() {
                         <div className={styles.tableHeader}>
                             <div className={styles.searchBar}>
                                 <div className={styles.searchBox}>
-                                    <img src={search} className={styles.searchIcon} alt='search' />
-                                    <div className={styles.searchText}>Search by order ID...</div>
+                                    <div className={styles.searchField}>
+                                        <img src={search} className={styles.searchIcon} alt='search' />
+                                        <div className={styles.searchText}>Search by order ID...</div>
+                                    </div>
                                 </div>
                                 <div className={styles.iconBox}>
                                     <div className={styles.sortBox}>
@@ -113,7 +115,7 @@ export default function MainBox() {
                             </table>
                         </div>
                         <div className={styles.paginationBox}>
-                            <div className={styles.pagination}>
+                            <div className={styles.paginationPrevious}>
                                 <img src={left} alt='left' className={styles.paginationIcon} />
                                 <div className={styles.previousText}>Previous</div>
                             </div>
@@ -125,7 +127,7 @@ export default function MainBox() {
                                     <div className={styles.pageNumberText}>...</div>
                                 </div>
                                 <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>10</div>
+                                    <div className={styles.pageNumberTextTen}>10</div>
                                 </div>
                                 <div className={styles.individualComponent}>
                                     <div className={styles.pageNumberText}>11</div>
@@ -152,7 +154,7 @@ export default function MainBox() {
                                     <div className={styles.pageNumberText}>18</div>
                                 </div>
                             </div>
-                            <div className={styles.pagination}>
+                            <div className={styles.paginationNext}>
                                 <div className={styles.previousText}>Next</div>
                                 <img src={right} alt='left' className={styles.paginationIcon} />
                             </div>

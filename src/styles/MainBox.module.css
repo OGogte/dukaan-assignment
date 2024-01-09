@@ -189,14 +189,18 @@
   display: flex;
   width: 248px;
   align-items: flex-start;
+}
+
+.searchField {
+  display: flex;
   padding: 10px 16px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
   border-radius: 4px;
   border: 1px solid var(--Black-85, #d9d9d9);
   background: var(--Black-100, #fff);
-  gap: 8px;
-  flex: 1 0 0;
 }
-
 .searchIcon {
   width: 14px;
   height: 14px;
@@ -318,7 +322,7 @@ td:nth-child(4) {
 }
 
 td:nth-child(1) {
-  color: #146EB4;
+  color: #146eb4;
 }
 
 .paginationBox {
@@ -331,12 +335,12 @@ td:nth-child(1) {
   padding-top: 24px;
 }
 
-.pagination {
+.paginationPrevious {
   display: flex;
   padding: 6px 12px 6px 6px;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #D9D9D9);
-  background: var(--Black-100, #FFF);
+  border: 1px solid var(--Black-85, #d9d9d9);
+  background: var(--Black-100, #fff);
   justify-content: center;
   align-items: center;
   gap: 6px;
@@ -348,7 +352,7 @@ td:nth-child(1) {
 }
 
 .previousText {
-  color: var(--Black-30, #4D4D4D);
+  color: var(--Black-30, #4d4d4d);
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -366,7 +370,7 @@ td:nth-child(1) {
 .individualComponent {
   display: flex;
   width: 28px;
-  height: 32px;
+  height: 28px;
   padding: 2px 0px;
   border-radius: 4px;
   flex-direction: column;
@@ -377,17 +381,41 @@ td:nth-child(1) {
 
 .pageNumberText {
   align-self: stretch;
-  color: var(--Black-30, #4D4D4D);
+  color: var(--Black-30, #4d4d4d);
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 28px;
   text-align: center;
 }
 
 .pageNumberText:hover {
-  background-color: #146EB4;
+  background-color: #146eb4;
   border-radius: 4px;
   color: #fff;
+}
+
+.pageNumberTextTen {
+  align-self: stretch;
+  background-color: #146eb4;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+.paginationNext {
+  display: flex;
+  padding: 6px 6px 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--Black-85, #D9D9D9);
+  background: var(--Black-100, #FFF);
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
