@@ -1,8 +1,6 @@
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
-import MainBox from './Components/MainBox';
 import styles from './styles/Dashboard.module.css';
-
 
 
 const Resume = () => {

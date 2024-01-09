@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/MainBox.module.css';
-import downBlack from '../assets/downBlack.svg';
 import search from '../assets/search.svg';
 import sort from '../assets/sort.svg';
 import download from '../assets/download.svg';
