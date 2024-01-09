@@ -1,4 +1,4 @@
-#Check these things out!
+# Check these things out!
 1. Search using searchbar for transactions table
 2. Pagination is working
 3. Drop down for last/this month filters the entries in the table
