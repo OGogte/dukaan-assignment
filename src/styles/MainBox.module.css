@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  /* border: 1px solid #000000; */
 }
 
 .topBox {
@@ -27,8 +26,7 @@
 }
 
 .overview {
-  color: var(--Black-12, #1a181e);
-  font-family: Inter;
+  color: #1a181e;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -42,19 +40,18 @@
   width: 123px;
   height: 36px;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #d9d9d9);
-  background: var(--Black-100, #fff);
+  border: 1px solid #d9d9d9;
+  background:  #fff;
   flex-shrink: 0;
   padding-left: 14px;
 }
 
 .monthText {
-  color: var(--Black-30, #4d4d4d);
-  font-family: Inter;
+  color:#4d4d4d;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .monthIcon {
@@ -73,8 +70,12 @@
 .orderBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
+  border-radius: 8px;
+  background:#fff;
+  box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
+  flex-direction: column;
   flex: 1 0 0;
 }
 
@@ -86,14 +87,15 @@
   gap: 16px;
   flex: 1 0 0;
   background-color: #ffffff;
+  align-self: stretch;
+  border-radius: 8px;
 }
 
 .orderText {
   display: flex;
   align-items: center;
-  gap: var(--Spacing-spacing-04, 8px);
-  color: var(--Black-30, #4d4d4d);
-  font-family: Inter;
+  gap: 8px;
+  color:  #4d4d4d;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -101,8 +103,7 @@
 }
 
 .orderNumbers {
-  color: var(--Black-12, #1a181e);
-  font-family: Inter;
+  color: #1a181e;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -112,12 +113,12 @@
 .amountBox {
   display: flex;
   padding: 20px;
-  border-radius: var(--Spacing-spacing-04, 8px);
+  border-radius:8px;
   box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
-  background: var(--Black-100, #fff);
+  background: #fff;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 24px;
   flex: 1 0 0;
 }
 
@@ -132,16 +133,20 @@
 .amountText {
   display: flex;
   align-items: center;
-  gap: var(--Spacing-spacing-04, 8px);
+  gap: 8px;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .amountNumber {
-  color: var(--Black-12, #1a181e);
-  font-family: Inter;
+  color: #1a181e;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  line-height: 38px; /* 118.75% */
+  line-height: 38px; 
 }
 
 .bottomBox {
@@ -152,8 +157,7 @@
 }
 
 .bottomBoxTitle {
-  color: var(--Black-12, #1a181e);
-  font-family: Inter;
+  color: #1a181e;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -164,9 +168,9 @@
   display: flex;
   overflow: hidden;
   padding: 12px 12px 24px 12px;
-  border-radius: var(--Spacing-spacing-04, 8px);
+  border-radius: 8px;
   box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
-  background: var(--Black-100, #fff);
+  background: #fff;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -198,8 +202,8 @@
   gap: 8px;
   flex: 1 0 0;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #d9d9d9);
-  background: var(--Black-100, #fff);
+  border: 1px solid  #d9d9d9;
+  background: #fff;
 }
 .searchIcon {
   width: 14px;
@@ -208,8 +212,7 @@
 
 .searchText {
   flex: 1 0 0;
-  color: var(--Black-60, #999);
-  font-family: Inter;
+  color: #999;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -229,14 +232,13 @@
   gap: 12px;
   padding: 6px 12px;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #d9d9d9);
-  background: var(--Black-100, #fff);
+  border: 1px solid  #d9d9d9;
+  background: #fff;
   gap: 6px;
 }
 
 .sortText {
-  color: var(--Black-30, #4d4d4d);
-  font-family: Inter;
+  color: #4d4d4d;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -255,7 +257,7 @@
   width: 28px;
   height: 36px;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #d9d9d9);
+  border: 1px solid #d9d9d9;
   flex-shrink: 0;
 }
 
@@ -271,8 +273,6 @@ table {
 
 th {
   padding: 10px 12px;
-  border-radius: 4px;
-  border-bottom: 1px solid #ddd;
   background: #f2f2f2;
   color: #4d4d4d;
   font-size: 14px;
@@ -290,6 +290,17 @@ th:nth-child(3),
 th:nth-child(4) {
   text-align: right;
 }
+
+th:nth-child(1) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+th:nth-child(4) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 .infoBox {
   display: flex;
   flex-direction: row-reverse;
@@ -339,8 +350,8 @@ td:nth-child(1) {
   display: flex;
   padding: 6px 12px 6px 6px;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #d9d9d9);
-  background: var(--Black-100, #fff);
+  border: 1px solid #d9d9d9;
+  background: #fff;
   justify-content: center;
   align-items: center;
   gap: 6px;
@@ -352,8 +363,7 @@ td:nth-child(1) {
 }
 
 .previousText {
-  color: var(--Black-30, #4d4d4d);
-  font-family: Inter;
+  color: #4d4d4d;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -364,7 +374,7 @@ td:nth-child(1) {
 .pageNumber {
   display: flex;
   align-items: flex-start;
-  gap: var(--Spacing-spacing-04, 8px);
+  gap: 8px;
 }
 
 .individualComponent {
@@ -381,8 +391,7 @@ td:nth-child(1) {
 
 .pageNumberText {
   align-self: stretch;
-  color: var(--Black-30, #4d4d4d);
-  font-family: Inter;
+  color: #4d4d4d;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -401,7 +410,6 @@ td:nth-child(1) {
   background-color: #146eb4;
   border-radius: 4px;
   color: #fff;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -413,8 +421,8 @@ td:nth-child(1) {
   display: flex;
   padding: 6px 6px 6px 12px;
   border-radius: 4px;
-  border: 1px solid var(--Black-85, #D9D9D9);
-  background: var(--Black-100, #FFF);
+  border: 1px solid #d9d9d9;
+  background: #fff;
   justify-content: center;
   align-items: center;
   gap: 6px;

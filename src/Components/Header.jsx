@@ -18,7 +18,11 @@ export default function Header() {
             </div>
             <div className={styles.searchBarBox}>
                 <img className={styles.searchBarIcon} src={search} alt='Search' />
-                <div className={styles.searchBarText} >Search features, tutorials, etc.</div>
+                <input
+                    type='text'
+                    className={styles.searchBarInput}
+                    placeholder='Search features, tutorials, etc.'
+                />
             </div>
             <div className={styles.iconBox}>
                 <img src={messages} alt='messages' className={styles.icon} />

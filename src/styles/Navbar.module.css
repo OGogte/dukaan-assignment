@@ -1,5 +1,5 @@
 .navbar {
-  height: 963px;
+  height: 965px;
   width: 224px;
   background-color: #1e2640;
   color: #ffffff;
@@ -7,7 +7,6 @@
 }
 
 .navBox {
-  /* height: 1482px; */
   width: 224px;
   display: inline-flex;
   flex-direction: column;
@@ -70,7 +69,6 @@
   align-items: center;
   gap: 4px;
   flex: 1 0 0;
-  
 }
 .navButton {
   display: flex;
@@ -107,9 +105,8 @@
   opacity: 0.8;
 }
 .navName {
-  color: var(--Black-100, #fff);
+  color: #fff;
   opacity: 0.8;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -150,8 +147,7 @@
 
 .navWalletTitle {
   opacity: 0.8;
-  color: var(--Black-100, #fff);
-  font-family: Inter;
+  color: #fff;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -161,8 +157,7 @@
 
 .navWalletMoney {
   margin-top: 0px;
-  color: var(--Black-100, #fff);
-  font-family: Inter;
+  color:#fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
