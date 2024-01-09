@@ -1,13 +1,15 @@
+/* Your styles with all values converted to vw and vh units for responsiveness */
+
 .navbar {
-  height: 965px;
-  width: 224px;
+  height: 98vh;
+  width: 11.5vw;
   background-color: #1e2640;
   color: #ffffff;
-  padding: 16px 10px 0px;
+  padding: 1vw 0.625vw 0;
 }
 
 .navBox {
-  width: 224px;
+  width: 11.66vw;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -15,13 +17,14 @@
   justify-content: space-between;
   height: 100%;
 }
+
 .companyBox {
-  width: 192px;
-  height: 42px;
+  width: 10vw;
+  height: 4.352vh;
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 0.75vw;
+  margin-bottom:1.5vw;
 }
 
 .companyImg {
@@ -34,32 +37,32 @@
   flex-direction: column;
 }
 .companyTitle {
-  width: 108px;
+  width: 5.625vw;
   align-self: stretch;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9375vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 1.375vw;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .companyData {
-  margin-top: 3px;
+  margin-top: 0.1875vh;
   opacity: 0.8;
   align-self: stretch;
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8125vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1vw;
   text-decoration-line: underline;
 }
 
 .down {
-  width: 20px;
-  height: 20px;
+  width: 1.041vw;
+  height: 2.038vh;
   flex-shrink: 0;
 }
 
@@ -67,36 +70,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 0.25vh;
   flex: 1 0 0;
 }
+
 .navButton {
   display: flex;
-  width: 176px;
-  height: 20px;
-  padding: 8px 16px;
+  width: 9.167vw;
+  height: 2.038vh;
+  padding: 0.5vw 1vw;
   align-items: center;
-  gap: 12px;
+  gap: 0.75vw;
 }
 .navButton:hover {
-  display: flex;
-  width: 176px;
-  height: 20px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  align-items: center;
-  gap: 12px;
+
   background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
+
 .navButtonPayments {
   display: flex;
-  width: 176px;
-  height: 20px;
-  padding: 8px 16px;
-  border-radius: 4px;
+  width: 9.167vw;
+  height: 2.038vh;
+  padding: 0.5vw 1vw;
+  border-radius: 0.25vw;
   align-items: center;
-  gap: 12px;
+  gap: 0.75vw;
   background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 .navIcon {
   width: 20px;
@@ -114,52 +115,44 @@
 }
 
 .navWallet {
-  height: 54px;
+  height: 5.504vh;
   display: flex;
-  width: 168px;
-  padding: 6px 12px;
-  border-radius: 4px;
+  width: 8.75vw;
+  padding: 0.375vw 0.75vw;
+  border-radius: 0.25vw;
   background: #353c53;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  gap: 0.625vw;
+  margin-bottom: 1vh;
 }
 
-.navWalletIconContainer {
-  display: flex;
-  padding: 6px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.1);
-  align-items: flex-start;
-  gap: 10px;
-}
 .navWalletIcon {
-  width: 24px;
-  height: 24px;
+  width: 1.25vw;
+  height: 2.446vh;
 }
 
 .navWalletBox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2px;
+  gap: 0.125vw;
 }
 
 .navWalletTitle {
   opacity: 0.8;
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8125vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
-  margin-bottom: 0px;
+  line-height: 1vw;
+  margin-bottom: 0;
 }
 
 .navWalletMoney {
-  margin-top: 0px;
-  color:#fff;
-  font-size: 16px;
+  margin-top: 0;
+  color: #fff;
+  font-size: 1vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5vw;
 }

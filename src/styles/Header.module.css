@@ -1,82 +1,82 @@
 .header {
   display: flex;
-  width: 1612px;
-  height: 42px;
-  padding: 12px 32px;
+  width: 83.74vw;
+  height: 4.28vh;
+  padding: 0.625vw 1.667vw;
   border-bottom: 1px solid #d9d9d9;
   background: #fff;
   align-items: center;
-  gap: 16px;
+  gap: 0.833vw;
 }
 
 .leftTextBox {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 0.833vw;
   flex: 1 0 0;
 }
 .title {
   color: #1a181e;
-  font-size: 15px;
+  font-size: 0.78125vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.145vw;
 }
 
 .info {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.3125vw;
 }
 
 .infoIcon {
-  width: 14px;
-  height: 14px;
+  width: 0.729vw;
+  height: 0.729vw;
   cursor: pointer;
 }
 
 .infoText {
   color: #4d4d4d;
-  font-size: 12px;
+  font-size: 0.625vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 0.833vw;
 }
 
 .searchBarBox {
   display: flex;
   width: 400px;
-  padding: 9px 16px;
-  border-radius: 6px;
+  padding: 0.46875vw 0.833vw;
+  border-radius: 0.3125vw;
   background: #f2f2f2;
   align-items: center;
-  gap: 8px;
+  gap: 0.416vw;
   flex-shrink: 0;
   align-self: stretch;
 }
 
 .searchBarIcon {
-  width: 16px;
-  height: 16px;
+  width: 0.833vw;
+  height: 0.833vw;
   flex-shrink: 0;
 }
 
 .searchBarText {
   color: #808080;
-  font-size: 15px;
+  font-size: 0.78125vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.1458vw;
 }
 
 .searchBarInput {
   border: none;
   outline: none;
   width: 100%;
-  font-size: 15px;
+  font-size: 0.78125vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.1458vw;
   color: #808080;
   background: transparent;
 }
@@ -85,12 +85,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 8px;
+  gap: 0.4167vw;
   flex: 1 0 0;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 2.0834vw;
+  height: 2.0834vw;
   cursor: pointer;
 }

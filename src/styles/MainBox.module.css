@@ -1,20 +1,20 @@
 .mainBox {
-  margin: 32px;
+  margin: 1.67vw;
 }
 
 .outerBox {
   display: flex;
-  width: 1610px;
+  /* width: 1610px; */
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 1.67vw;
 }
 
 .topBox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.25vw;
   align-self: stretch;
 }
 
@@ -27,43 +27,52 @@
 
 .overview {
   color: #1a181e;
-  font-size: 20px;
+  font-size: 1.04vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.458vw;
 }
 
 .month {
   display: flex;
   align-items: center;
-  gap: 7px;
-  width: 123px;
-  height: 36px;
-  border-radius: 4px;
-  border: 1px solid #d9d9d9;
-  background:  #fff;
+  gap: 0.364vw;
+  width: 6.406vw;
+  height: 3.67vh;
+  border-radius: 0.208vw;
+  /* border: 1px solid #d9d9d9; */
+  /* background:  #fff; */
   flex-shrink: 0;
-  padding-left: 14px;
+  padding-left: 0.73vw;
 }
 
 .monthText {
-  color:#4d4d4d;
-  font-size: 16px;
+  color: #4d4d4d;
+  font-size: 0.833vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.25vw;
+}
+.monthDropdown {
+  width: 6.406vw;
+  height: 3.67vh;
+  border-radius: 0.208vw;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  padding-left: 0.73vw;
+  font-size: 0.833vw;
 }
 
 .monthIcon {
-  width: 16px;
-  height: 16px;
+  width: 0.833vw;
+  height: 0.833vw;
   flex-shrink: 0;
 }
 
 .details {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 1.041vw;
   align-self: stretch;
 }
 
@@ -71,9 +80,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 24px;
-  border-radius: 8px;
-  background:#fff;
+  gap: 1.25vw;
+  border-radius: 0.416vw;
+  background: #fff;
   box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
   flex-direction: column;
   flex: 1 0 0;
@@ -81,44 +90,44 @@
 
 .orders {
   display: flex;
-  padding: 20px;
+  padding: 1.04vw;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 0.833vw;
   flex: 1 0 0;
   background-color: #ffffff;
   align-self: stretch;
-  border-radius: 8px;
+  border-radius: 0.416vw;
 }
 
 .orderText {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color:  #4d4d4d;
-  font-size: 16px;
+  gap: 0.416vw;
+  color: #4d4d4d;
+  font-size: 0.833vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.25vw;
 }
 
 .orderNumbers {
   color: #1a181e;
-  font-size: 32px;
+  font-size: 1.667vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 1.98vw;
 }
 
 .amountBox {
   display: flex;
-  padding: 20px;
-  border-radius:8px;
+  padding: 1.0416vw;
+  border-radius: 0.416vw;
   box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
   background: #fff;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.25vw;
   flex: 1 0 0;
 }
 
@@ -126,48 +135,48 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 0.833vw;
   align-self: stretch;
 }
 
 .amountText {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.416vw;
   color: #4d4d4d;
-  font-size: 16px;
+  font-size: 0.833vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.25vw;
 }
 
 .amountNumber {
   color: #1a181e;
-  font-size: 32px;
+  font-size: 1.667vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 38px; 
+  line-height: 1.979vw;
 }
 
 .bottomBox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 1.0416vw;
 }
 
 .bottomBoxTitle {
   color: #1a181e;
-  font-size: 20px;
+  font-size: 1.0416vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.458vw;
 }
 
 .tableBox {
   display: flex;
   overflow: hidden;
-  padding: 12px 12px 24px 12px;
+  padding: 0.625vw 0.625vw 1.25vw 0.625vw;
   border-radius: 8px;
   box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
   background: #fff;
@@ -179,7 +188,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  gap: 0.625vw;
 }
 
 .searchBar {
@@ -191,94 +200,103 @@
 
 .searchBox {
   display: flex;
-  width: 248px;
-  align-items: flex-start;
+  width: 12.916vw;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  padding: 0.32vw 0.833vw;
+  border: 1px solid #d9d9d9;
 }
 
 .searchField {
   display: flex;
-  padding: 10px 16px;
+  padding: 0.52vw 0.833vw;
   align-items: center;
-  gap: 8px;
+  gap: 0.416vw;
   flex: 1 0 0;
-  border-radius: 4px;
-  border: 1px solid  #d9d9d9;
+  border-radius: 0.208vw;
+  border: none;
+  outline: none;
   background: #fff;
+  font-size: 0.73vw;
 }
+
 .searchIcon {
-  width: 14px;
-  height: 14px;
+  width: 0.729vw;
+  height: 0.729vw;
 }
 
 .searchText {
   flex: 1 0 0;
   color: #999;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.04vw;
 }
 
 .iconBox {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 0.625vw;
 }
 
 .sortBox {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.625vw;
   padding: 6px 12px;
   border-radius: 4px;
-  border: 1px solid  #d9d9d9;
+  border: 1px solid #d9d9d9;
   background: #fff;
-  gap: 6px;
+  gap: 0.3125vw;
+  cursor: pointer;
 }
 
 .sortText {
   color: #4d4d4d;
-  font-size: 16px;
+  font-size: 0.833vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.25vw;
 }
 
 .sortIcon {
-  width: 16px;
-  height: 16px;
+  width: 0.833vw;
+  height: 0.833vw;
 }
 
 .downloadBox {
   display: flex;
   align-items: center;
-  padding-left: 8px;
-  width: 28px;
-  height: 36px;
+  padding-left: 0.416vw;
+  width: 1.458vw;
+  height: 1.875vw;
   border-radius: 4px;
   border: 1px solid #d9d9d9;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .downloadIcon {
-  width: 20px;
-  height: 20px;
+  width: 1.041vw;
+  height: 1.041vw;
   flex-shrink: 0;
 }
 table {
   border-collapse: collapse;
-  width: 1580px;
+  width: 82.5vw;
 }
 
 th {
   padding: 10px 12px;
   background: #f2f2f2;
   color: #4d4d4d;
-  font-size: 14px;
+  font-size: 0.729vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.041vw;
 }
 
 th:nth-child(1),
@@ -310,17 +328,17 @@ th:nth-child(4) {
 }
 
 .infoIcon {
-  width: 14px;
-  height: 14px;
+  width: 0.729vw;
+  height: 0.729vw;
 }
 td {
-  font-size: 14px;
+  font-size: 0.729vw;
   border-bottom: 1px solid #ddd;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  height: 20px;
-  padding: 14px 12px;
+  line-height: 1.041vw;
+  height: 1.041vw;
+  padding: 0.729vw 0.625vw;
 }
 td:nth-child(1),
 td:nth-child(2) {
@@ -342,8 +360,9 @@ td:nth-child(1) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  padding-top: 24px;
+  gap: 1.25vw;
+  padding-top: 1.25vw;
+  cursor: pointer;
 }
 
 .paginationPrevious {
@@ -358,16 +377,16 @@ td:nth-child(1) {
 }
 
 .paginationIcon {
-  width: 18px;
-  height: 18px;
+  width: 0.9375vw;
+  height: 0.9375vw;
 }
 
 .previousText {
   color: #4d4d4d;
-  font-size: 14px;
+  font-size: 0.729vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.041vw;
   text-align: center;
 }
 
@@ -379,8 +398,8 @@ td:nth-child(1) {
 
 .individualComponent {
   display: flex;
-  width: 28px;
-  height: 28px;
+  width: 1.458vw;
+  height: 2.85vw;
   padding: 2px 0px;
   border-radius: 4px;
   flex-direction: column;
@@ -392,10 +411,10 @@ td:nth-child(1) {
 .pageNumberText {
   align-self: stretch;
   color: #4d4d4d;
-  font-size: 14px;
+  font-size: 0.729vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.458vw;
   text-align: center;
 }
 
@@ -410,10 +429,10 @@ td:nth-child(1) {
   background-color: #146eb4;
   border-radius: 4px;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.729vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.458vw;
   text-align: center;
 }
 

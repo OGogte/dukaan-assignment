@@ -15,7 +15,16 @@ import audience from '../assets/audience.svg';
 import appearance from '../assets/appearance.svg';
 import plugins from '../assets/plugins.svg';
 import wallet from '../assets/wallet.svg';
+import { useNavigate } from 'react-router-dom';
 export default function Navbar() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+      navigate('/resume');
+    };
+    const handleClicks = () => {
+        navigate('/');
+      };
     return (
         <div className={styles.navbar}>
             <div className={styles.navBox}>
@@ -23,56 +32,56 @@ export default function Navbar() {
                     <img src={logo} alt='logo' className={styles.companyImg} />
                     <div className={styles.companyInfo}>
                         <p className={styles.companyTitle}>Nishyan</p>
-                        <a href='/' className={styles.companyData}>Visit Store</a>
+                        <a href='/resume' className={styles.companyData}>Visit Store</a>
                     </div>
                     <img src={down} alt='down arrow' className={styles.down} />
                 </div>
                 <div className={styles.navButtons}>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={home} alt='home' className={styles.navIcon} />
                         <p className={styles.navName}>Home</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={orders} alt='orders' className={styles.navIcon} />
                         <p className={styles.navName}>Orders</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={products} alt='products' className={styles.navIcon} />
                         <p className={styles.navName}>Products</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={delivery} alt='delivery' className={styles.navIcon} />
                         <p className={styles.navName}>Delivery</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={marketing} alt='marketing' className={styles.navIcon} />
                         <p className={styles.navName}>Marketing</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={analytics} alt='analytics' className={styles.navIcon} />
                         <p className={styles.navName}>Analytics</p>
                     </div>
-                    <div className={styles.navButtonPayments}>
+                    <div onClick={handleClicks} className={styles.navButtonPayments}>
                         <img src={payments} alt='payments' className={styles.navIcon} />
                         <p className={styles.navName}>Payments</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={tools} alt='tools' className={styles.navIcon} />
                         <p className={styles.navName}>Tools</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={discounts} alt='discounts' className={styles.navIcon} />
                         <p className={styles.navName}>Discounts</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={audience} alt='audience' className={styles.navIcon} />
                         <p className={styles.navName}>Audience</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={appearance} alt='appearance' className={styles.navIcon} />
                         <p className={styles.navName}>Appearance</p>
                     </div>
-                    <div className={styles.navButton}>
+                    <div  onClick={handleClick} className={styles.navButton}>
                         <img src={plugins} alt='plugins' className={styles.navIcon} />
                         <p className={styles.navName}>Plugins</p>
                     </div>

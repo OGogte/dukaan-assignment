@@ -8,7 +8,15 @@ import triangleIcon from '../assets/triangleIcon.svg';
 import info from '../assets/info.svg';
 import left from '../assets/left.svg';
 import right from '../assets/right.svg';
+import { useState } from 'react';
 export default function MainBox() {
+    const [selectedMonth, setSelectedMonth] = useState("This Month");
+
+    // Dropdown change handler
+    const handleMonthChange = (event) => {
+        setSelectedMonth(event.target.value);
+    };
+
     return (
         <div className={styles.mainBox}>
             <div className={styles.outerBox}>
@@ -16,8 +24,15 @@ export default function MainBox() {
                     <div className={styles.title}>
                         <div className={styles.overview}>Overview</div>
                         <div className={styles.month}>
-                            <div className={styles.monthText}>Last Month</div>
-                            <img className={styles.monthIcon} src={downBlack} alt='down arrow' />
+                            <select
+                                className={styles.monthDropdown}
+                                value={selectedMonth}
+                                onChange={handleMonthChange}
+                            >
+                                <option value="This Month">This Month</option>
+                                <option value="Last Month">Last Month</option>
+
+                            </select>
                         </div>
                     </div>
                     <div className={styles.details}>
@@ -41,10 +56,12 @@ export default function MainBox() {
                         <div className={styles.tableHeader}>
                             <div className={styles.searchBar}>
                                 <div className={styles.searchBox}>
-                                    <div className={styles.searchField}>
-                                        <img src={search} className={styles.searchIcon} alt='search' />
-                                        <div className={styles.searchText}>Search by order ID...</div>
-                                    </div>
+                                    <img src={search} className={styles.searchIcon} alt="search" />
+                                    <input
+                                        type="text"
+                                        className={styles.searchField}
+                                        placeholder="Search by order ID..."
+                                    />
                                 </div>
                                 <div className={styles.iconBox}>
                                     <div className={styles.sortBox}>
@@ -100,18 +117,7 @@ export default function MainBox() {
                                     <td>₹1,278.23</td>
                                     <td>₹22</td>
                                 </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
+
                             </table>
                         </div>
                         <div className={styles.paginationBox}>

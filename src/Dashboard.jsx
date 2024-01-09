@@ -1,18 +1,23 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
-import styles from './styles/Dashboard.module.css'
 import MainBox from './Components/MainBox';
+import styles from './styles/Dashboard.module.css';
+
 export default function Dashboard() {
   return (
     <div className={styles.dashboard}>
-      <div>
+      <div className={styles.leftPanel}>
         <Navbar />
       </div>
       <div>
-        <Header />
-        <MainBox />
+        <div className={styles.topBar}>
+          <Header />
+        </div>
+        <div className={styles.mainContent}>
+          <MainBox />
+        </div>
       </div>
     </div>
-  )
+  );
 }
