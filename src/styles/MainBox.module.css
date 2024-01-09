@@ -399,13 +399,14 @@ td:nth-child(1) {
 .individualComponent {
   display: flex;
   width: 1.458vw;
-  height: 2.85vw;
+  height: 2.85vh;
   padding: 2px 0px;
   border-radius: 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .pageNumberText {
@@ -416,6 +417,13 @@ td:nth-child(1) {
   font-weight: 400;
   line-height: 1.458vw;
   text-align: center;
+  transition: background-color 0.3s;
+}
+
+.active {
+  background-color: #146eb4;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .pageNumberText:hover {

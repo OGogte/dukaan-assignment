@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/MainBox.module.css';
 import search from '../assets/search.svg';
 import sort from '../assets/sort.svg';
@@ -7,13 +7,35 @@ import triangleIcon from '../assets/triangleIcon.svg';
 import info from '../assets/info.svg';
 import left from '../assets/left.svg';
 import right from '../assets/right.svg';
-import { useState } from 'react';
+import tableEntries from './tableEntries';
 export default function MainBox() {
     const [selectedMonth, setSelectedMonth] = useState("This Month");
+    const [currentPage, setCurrentPage] = useState(1);
+    const [searchQuery, setSearchQuery] = useState("");
+    const entriesPerPage = 6;
 
-    // Dropdown change handler
     const handleMonthChange = (event) => {
         setSelectedMonth(event.target.value);
+        setCurrentPage(1);
+    };
+
+    const handleSearchChange = (event) => {
+        const query = event.target.value.toLowerCase();
+        setSearchQuery(query);
+        setCurrentPage(1);
+    };
+
+    const filteredEntries = selectedMonth === "This Month" ? tableEntries.slice(0, 100) : tableEntries.slice(100);
+    const searchedEntries = searchQuery
+        ? filteredEntries.filter(entry => entry.orderId.toLowerCase().includes(searchQuery.toLowerCase()))
+        : filteredEntries;
+
+    const indexOfLastEntry = currentPage * entriesPerPage;
+    const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
+    const currentEntries = searchedEntries.slice(indexOfFirstEntry, indexOfLastEntry);
+
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
     };
 
     return (
@@ -60,6 +82,8 @@ export default function MainBox() {
                                         type="text"
                                         className={styles.searchField}
                                         placeholder="Search by order ID..."
+                                        value={searchQuery}
+                                        onChange={handleSearchChange}
                                     />
                                 </div>
                                 <div className={styles.iconBox}>
@@ -74,94 +98,41 @@ export default function MainBox() {
                             </div>
 
                             <table>
-                                <tr>
-                                    <th>Order ID</th>
-                                    <th>Order date <img src={triangleIcon} alt='triangle' /></th>
-                                    <th>Order Amount</th>
-                                    <th><div className={styles.infoBox}><img className={styles.infoIcon} src={info} alt='info' />Transaction fees </div></th>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-                                <tr>
-                                    <td>#281209</td>
-                                    <td>7 July, 2023</td>
-                                    <td>₹1,278.23</td>
-                                    <td>₹22</td>
-                                </tr>
-
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Order date <img src={triangleIcon} alt='triangle' /></th>
+                                        <th>Order Amount</th>
+                                        <th><div className={styles.infoBox}><img className={styles.infoIcon} src={info} alt='info' />Transaction fees </div></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {currentEntries.map((entry, index) => (
+                                        <tr key={index}>
+                                            <td>{entry.orderId}</td>
+                                            <td>{entry.orderDate}</td>
+                                            <td>{entry.orderAmount}</td>
+                                            <td>{entry.transactionFees}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
                             </table>
-                        </div>
-                        <div className={styles.paginationBox}>
-                            <div className={styles.paginationPrevious}>
-                                <img src={left} alt='left' className={styles.paginationIcon} />
-                                <div className={styles.previousText}>Previous</div>
-                            </div>
-                            <div className={styles.pageNumber}>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>1</div>
+                            <div className={styles.paginationBox}>
+                                <div className={styles.paginationPrevious} onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
+                                    <img src={left} alt='left' className={styles.paginationIcon} />
+                                    <div className={styles.previousText}>Previous</div>
                                 </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>...</div>
+                                <div className={styles.pageNumber}>
+                                    {Array.from({ length: Math.ceil(filteredEntries.length / entriesPerPage) }, (_, index) => (
+                                        <div key={index} className={`${styles.individualComponent} ${currentPage === index + 1 ? styles.active : ''}`} onClick={() => paginate(index + 1)}>
+                                            <div className={styles.pageNumberText}>{index + 1}</div>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberTextTen}>10</div>
+                                <div className={styles.paginationNext} onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(filteredEntries.length / entriesPerPage)}>
+                                    <div className={styles.previousText}>Next</div>
+                                    <img src={right} alt='left' className={styles.paginationIcon} />
                                 </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>11</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>12</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>13</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>14</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>15</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>16</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>17</div>
-                                </div>
-                                <div className={styles.individualComponent}>
-                                    <div className={styles.pageNumberText}>18</div>
-                                </div>
-                            </div>
-                            <div className={styles.paginationNext}>
-                                <div className={styles.previousText}>Next</div>
-                                <img src={right} alt='left' className={styles.paginationIcon} />
                             </div>
                         </div>
 

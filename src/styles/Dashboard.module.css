@@ -3,4 +3,11 @@
   flex-direction: row;
 }
 
+.mainContent {
+  text-align: center;
+}
 
+.pdfViewer img {
+  height: 870px;
+  align-self: center;
+}
