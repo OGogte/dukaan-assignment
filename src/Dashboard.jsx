@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import styles from './styles/Dashboard.module.css'
-import Table from './Components/Table';
+import MainBox from './Components/MainBox';
 export default function Dashboard() {
   return (
     <div className={styles.dashboard}>
@@ -11,7 +11,7 @@ export default function Dashboard() {
       </div>
       <div>
         <Header />
-        <Table />
+        <MainBox />
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Header.module.css';
 import question from '../assets/question.svg';
 import search from '../assets/search.svg';
-import ellipse from '../assets/ellipse.svg';
+
 import messages from '../assets/messages.svg';
 import headerDown from '../assets/headerDown.svg';
 export default function Header() {
