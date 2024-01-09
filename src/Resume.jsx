@@ -1,6 +1,6 @@
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
-import styles from './styles/Dashboard.module.css';
+import styles from './styles/Resume.module.css';
 import resume from './assets/OmGogteResume.jpg';
 const Resume = () => {
     return (
@@ -14,7 +14,8 @@ const Resume = () => {
                         <Header />
                     </div>
                     <div className={styles.mainContent}>
-                        This component is yet to be created. Take a look at my resume and we could work on this together🤝.
+                        This page is under development. <br />
+                        Take a look at my resume and we could work on this together🤝.
                         <div className={styles.pdfViewer}>
                         <img src ={resume} alt='Resume' />
                         </div>

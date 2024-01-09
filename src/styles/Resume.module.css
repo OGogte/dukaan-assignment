@@ -4,12 +4,12 @@
 }
 
 .mainContent {
+    padding-top: 12px;
   text-align: center;
-
 }
 
 .pdfViewer img {
   padding-top: 2rem;
-  height: 620px;
+  height: 608px;
   align-self: center;
 }
